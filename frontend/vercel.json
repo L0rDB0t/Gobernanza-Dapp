@@ -2,14 +2,17 @@
   "version": 2,
   "builds": [
     {
-      "src": "frontend/**/*",
+      "src": "frontend/index.html",
       "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/(.*)",
-      "dest": "/frontend/index.html"
+      "dest": "/frontend/index.html",
+      "headers": {
+        "Content-Security-Policy": "frame-ancestors 'none'"
+      }
     }
   ]
 }
