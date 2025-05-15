@@ -1,16 +1,16 @@
 {
-  "name": "governance-dapp",
+  "name": "governance-static",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "deploy": "vercel --prod"
+    },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
     "@nomicfoundation/hardhat-toolbox": "^5.0.0",
+    "@vercel/static": "^2.0.0", 
     "hardhat": "^2.24.0"
   },
   "dependencies": {
